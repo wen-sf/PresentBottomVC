@@ -14,6 +14,10 @@ class FirstViewController: UIViewController, PresentBottomType {
         return 200
     }
     
+    var canPanDown: Bool {
+        return true
+    }
+    
     private lazy var closeBtn: UIButton = {
        let closeBtn = UIButton()
         closeBtn.frame = CGRect(x: 0, y: 0, width: 100, height: 50)
